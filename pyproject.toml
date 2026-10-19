@@ -1,0 +1,19 @@
+[project]
+name = "dupfinder"
+version = "0.1.0"
+description = "Find duplicate files by content hash."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "dupfinder contributors" }]
+keywords = ["duplicates", "files", "hash", "cli"]
+
+[project.scripts]
+dupfinder = "dupfinder.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["dupfinder"]
